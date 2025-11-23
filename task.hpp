@@ -23,7 +23,7 @@ private:
 public:
 
 	//Construtor da classe Task
-	Task(int identificacao, const std::string& nome, const std::string& descricao);
+	Task(int identificacao, const std::string& nome, const std::string& descricao, bool stat);
 
 	//retorna a identificacao da tarefa
 	int getId() const;
@@ -37,6 +37,7 @@ public:
 	//retorna o status atual da tarefa
 	bool getStatus() const;
 
+	//Completa a task
 	void taskCompleted();
 
 

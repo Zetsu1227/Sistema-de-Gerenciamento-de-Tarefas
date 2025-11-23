@@ -1,6 +1,6 @@
 #include "task.hpp"
 
-Task::Task(int identificacao, const std::string& nome, const std::string& descricao)
+Task::Task(int identificacao, const std::string& nome, const std::string& descricao, bool stat)
 {
 	
 	id = identificacao;
@@ -9,8 +9,7 @@ Task::Task(int identificacao, const std::string& nome, const std::string& descri
 
 	desc = descricao;
 
-	//por padrao nao vai estar completo
-	status = false;
+	status = stat;
 
 }
 
@@ -26,7 +25,7 @@ std::string Task::getDesc() const
 
 std::string Task::getName() const
 {
-	return desc;
+	return name;
 }
 
 bool Task::getStatus() const
